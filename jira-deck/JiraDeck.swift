@@ -1,10 +1,3 @@
-//
-//  jira_deckApp.swift
-//  jira-deck
-//
-//  Created by Declan Wade on 9/9/2024.
-//
-
 import SwiftUI
 
 @main

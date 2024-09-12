@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12D889352C8ECD39007F2759 /* jira_deckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889342C8ECD39007F2759 /* jira_deckApp.swift */; };
 		12D889372C8ECD39007F2759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889362C8ECD39007F2759 /* ContentView.swift */; };
 		12D889392C8ECD3A007F2759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D889382C8ECD3A007F2759 /* Assets.xcassets */; };
 		12D8893C2C8ECD3A007F2759 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D8893B2C8ECD3A007F2759 /* Preview Assets.xcassets */; };
+		12D889442C9317F2007F2759 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889432C9317F2007F2759 /* Utilities.swift */; };
+		12D889462C931868007F2759 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889452C931868007F2759 /* NetworkManager.swift */; };
+		12D889482C9318B7007F2759 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889472C9318B7007F2759 /* Settings.swift */; };
+		12D8894A2C931937007F2759 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889492C931937007F2759 /* Models.swift */; };
+		12D8894C2C9319A2007F2759 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894B2C9319A2007F2759 /* ContentViewModel.swift */; };
+		12D8894E2C931ABA007F2759 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894D2C931ABA007F2759 /* SettingsView.swift */; };
+		12D889502C9323C7007F2759 /* JiraDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894F2C9323C7007F2759 /* JiraDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12D889312C8ECD39007F2759 /* jira-deck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jira-deck.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12D889342C8ECD39007F2759 /* jira_deckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jira_deckApp.swift; sourceTree = "<group>"; };
+		12D889312C8ECD39007F2759 /* JiraDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D889362C8ECD39007F2759 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12D889382C8ECD3A007F2759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D8893B2C8ECD3A007F2759 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12D8893D2C8ECD3A007F2759 /* jira_deck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = jira_deck.entitlements; sourceTree = "<group>"; };
+		12D889432C9317F2007F2759 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		12D889452C931868007F2759 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		12D889472C9318B7007F2759 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		12D889492C931937007F2759 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		12D8894B2C9319A2007F2759 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		12D8894D2C931ABA007F2759 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		12D8894F2C9323C7007F2759 /* JiraDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiraDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +56,7 @@
 		12D889322C8ECD39007F2759 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12D889312C8ECD39007F2759 /* jira-deck.app */,
+				12D889312C8ECD39007F2759 /* JiraDeck.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +64,17 @@
 		12D889332C8ECD39007F2759 /* jira-deck */ = {
 			isa = PBXGroup;
 			children = (
-				12D889342C8ECD39007F2759 /* jira_deckApp.swift */,
+				12D8894B2C9319A2007F2759 /* ContentViewModel.swift */,
+				12D889492C931937007F2759 /* Models.swift */,
+				12D889472C9318B7007F2759 /* Settings.swift */,
+				12D889452C931868007F2759 /* NetworkManager.swift */,
+				12D8894F2C9323C7007F2759 /* JiraDeck.swift */,
 				12D889362C8ECD39007F2759 /* ContentView.swift */,
 				12D889382C8ECD3A007F2759 /* Assets.xcassets */,
 				12D8893D2C8ECD3A007F2759 /* jira_deck.entitlements */,
 				12D8893A2C8ECD3A007F2759 /* Preview Content */,
+				12D889432C9317F2007F2759 /* Utilities.swift */,
+				12D8894D2C931ABA007F2759 /* SettingsView.swift */,
 			);
 			path = "jira-deck";
 			sourceTree = "<group>";
@@ -72,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12D889302C8ECD39007F2759 /* jira-deck */ = {
+		12D889302C8ECD39007F2759 /* JiraDeck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12D889402C8ECD3A007F2759 /* Build configuration list for PBXNativeTarget "jira-deck" */;
+			buildConfigurationList = 12D889402C8ECD3A007F2759 /* Build configuration list for PBXNativeTarget "JiraDeck" */;
 			buildPhases = (
 				12D8892D2C8ECD39007F2759 /* Sources */,
 				12D8892E2C8ECD39007F2759 /* Frameworks */,
@@ -84,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = "jira-deck";
+			name = JiraDeck;
 			productName = "jira-deck";
-			productReference = 12D889312C8ECD39007F2759 /* jira-deck.app */;
+			productReference = 12D889312C8ECD39007F2759 /* JiraDeck.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 12D8892C2C8ECD39007F2759 /* Build configuration list for PBXProject "jira-deck" */;
+			buildConfigurationList = 12D8892C2C8ECD39007F2759 /* Build configuration list for PBXProject "JiraDeck" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12D889302C8ECD39007F2759 /* jira-deck */,
+				12D889302C8ECD39007F2759 /* JiraDeck */,
 			);
 		};
 /* End PBXProject section */
@@ -139,8 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D889462C931868007F2759 /* NetworkManager.swift in Sources */,
+				12D8894E2C931ABA007F2759 /* SettingsView.swift in Sources */,
+				12D889442C9317F2007F2759 /* Utilities.swift in Sources */,
+				12D889502C9323C7007F2759 /* JiraDeck.swift in Sources */,
 				12D889372C8ECD39007F2759 /* ContentView.swift in Sources */,
-				12D889352C8ECD39007F2759 /* jira_deckApp.swift in Sources */,
+				12D8894C2C9319A2007F2759 /* ContentViewModel.swift in Sources */,
+				12D8894A2C931937007F2759 /* Models.swift in Sources */,
+				12D889482C9318B7007F2759 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +304,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Jira Deck";
+				INFOPLIST_KEY_CFBundleDisplayName = JiraDeck;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +333,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Jira Deck";
+				INFOPLIST_KEY_CFBundleDisplayName = JiraDeck;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12D8892C2C8ECD39007F2759 /* Build configuration list for PBXProject "jira-deck" */ = {
+		12D8892C2C8ECD39007F2759 /* Build configuration list for PBXProject "JiraDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12D8893E2C8ECD3A007F2759 /* Debug */,
@@ -335,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12D889402C8ECD3A007F2759 /* Build configuration list for PBXNativeTarget "jira-deck" */ = {
+		12D889402C8ECD3A007F2759 /* Build configuration list for PBXNativeTarget "JiraDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12D889412C8ECD3A007F2759 /* Debug */,
