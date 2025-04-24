@@ -130,16 +130,32 @@ struct ContentView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .navigation) {
-                        Button(action: {
-                            viewModel.showingSettings = true
-                        }) {
-                            Image(systemName: "gear")
+                        HStack {
+                            Button(action: {
+                                viewModel.showingAdd = true
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                            Button(action: {
+                                viewModel.showingSettings = true
+                            }) {
+                                Image(systemName: "gear")
+                            }
                         }
                     }
                 }
                 .task {
                     await viewModel.loadData()
                 }
+            //    .sheet(isPresented: $viewModel.showingAdd) {
+            //        CreateIssueView(
+            //            onDone: {
+            //                print("Running create issue")
+            //                await viewModel.createIssue()  // Await should be used inside an async context
+             //           }
+             //       )
+             //   }
+                
                 .sheet(isPresented: $viewModel.showingSettings) {
                     SettingsView(
                         projectName: $viewModel.projectName,

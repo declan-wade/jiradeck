@@ -17,6 +17,7 @@
 		12D8894C2C9319A2007F2759 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894B2C9319A2007F2759 /* ContentViewModel.swift */; };
 		12D8894E2C931ABA007F2759 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894D2C931ABA007F2759 /* SettingsView.swift */; };
 		12D889502C9323C7007F2759 /* JiraDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8894F2C9323C7007F2759 /* JiraDeck.swift */; };
+		12D889522C93D418007F2759 /* CreateIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D889512C93D418007F2759 /* CreateIssueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		12D8894B2C9319A2007F2759 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		12D8894D2C931ABA007F2759 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		12D8894F2C9323C7007F2759 /* JiraDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiraDeck.swift; sourceTree = "<group>"; };
+		12D889512C93D418007F2759 /* CreateIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIssueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				12D8893A2C8ECD3A007F2759 /* Preview Content */,
 				12D889432C9317F2007F2759 /* Utilities.swift */,
 				12D8894D2C931ABA007F2759 /* SettingsView.swift */,
+				12D889512C93D418007F2759 /* CreateIssueView.swift */,
 			);
 			path = "jira-deck";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				12D889372C8ECD39007F2759 /* ContentView.swift in Sources */,
 				12D8894C2C9319A2007F2759 /* ContentViewModel.swift in Sources */,
 				12D8894A2C931937007F2759 /* Models.swift in Sources */,
+				12D889522C93D418007F2759 /* CreateIssueView.swift in Sources */,
 				12D889482C9318B7007F2759 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
